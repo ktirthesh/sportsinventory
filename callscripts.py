@@ -1,6 +1,6 @@
 
 import time,random,string,json
-from datetime import date
+from datetime import datetime
 from requests import post
 
 def random_char(y):
@@ -40,7 +40,7 @@ while(True):
 
     # list_no_quantity api call
     response_no_quantity=post(url=main_url+urls["list_no_items"])
-    result_all['item_no_quantity_response']="item_no_quantity|{}".format(response_no_quantity.json())
+    result_all['item_no_quantity_response']="item_no_quantity||{}".format(response_no_quantity.json())
 
 
     # save in json file
@@ -48,9 +48,9 @@ while(True):
 
     with open("response.json", "a") as outfile:
         outfile.write(json_object)
-    main_string="api called at {}".format(date.today())
+    main_string="api called at {}".format(datetime.today().strftime("%d/%m/%Y %H:%M:%S"))
     print(main_string)
-    time.sleep(1) 
+    time.sleep(60) 
 
  
 # Serializing json
