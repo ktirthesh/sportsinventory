@@ -1,0 +1,4 @@
+sportsenv
+sportsinventoryexample/db.sqlite3
+*.pyc 
+sportsinventoryexample/main/migrations
