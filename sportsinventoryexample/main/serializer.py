@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import SportsEquipments
 
+
 class SportsEquipmentsSerializer(serializers.ModelSerializer):
     """
     serializer class used to python object into dict format
@@ -10,5 +11,4 @@ class SportsEquipmentsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SportsEquipments
-        fields = ['name','quantity']
-
+        fields = ['name', 'quantity']
