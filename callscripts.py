@@ -52,7 +52,3 @@ while(True):
     print(main_string)
     time.sleep(60) 
 
- 
-# Serializing json
- 
-# Writing to sample.json    

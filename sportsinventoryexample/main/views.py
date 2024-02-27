@@ -83,9 +83,13 @@ class UpdateEquipment(generics.GenericAPIView):
         Update Item entry
         """
         try:
+            
+            new_validation_dict=validation_dict.copy()
+            new_validation_dict['quantity']['required']=True
+
             request_data = request.POST.copy() or request.data.copy()
             error_data = {}
-            for key, value in validation_dict.items():
+            for key, value in new_validation_dict.items():
                 if value["required"] and not request_data.get(key, None):
                     error_data[key] = "{} is mandetory.".format(key)
                 if request_data.get(key, False) and value.get('regex_') and not re.match(value['regex_'], str(request_data.get(key))):
