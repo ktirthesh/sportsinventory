@@ -1,0 +1,9 @@
+{
+    "create_response": "response_create|{'name': 'iNRHLzLkOM', 'quantity': 16}|{'status': True, 'data': 'record saved successfully'}",
+    "update_response": "response_update|{'name': 'iNRHLzLkOM', 'quantity': 72}|{'status': True, 'data': 'record updated successfully'}",
+    "item_no_quantity_response": "item_no_quantity|[{'name': 'glouse', 'quantity': 0}, {'name': 'bat', 'quantity': 0}]"
+}{
+    "create_response": "response_create|{'name': 'marlbPeoHa', 'quantity': 33}|{'status': True, 'data': 'record saved successfully'}",
+    "update_response": "response_update|{'name': 'marlbPeoHa', 'quantity': 27}|{'status': True, 'data': 'record updated successfully'}",
+    "item_no_quantity_response": "item_no_quantity|[{'name': 'glouse', 'quantity': 0}, {'name': 'bat', 'quantity': 0}]"
+}
